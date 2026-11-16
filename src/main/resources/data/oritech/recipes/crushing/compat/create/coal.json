@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "minecraft:coals"
+    }
+  ],
+  "results": [
+    {
+      "item": "oritech:coal_dust"
+    }
+  ]
+}

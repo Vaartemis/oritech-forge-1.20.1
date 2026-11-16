@@ -1,0 +1,47 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "CC0-1.0 (code); see LICENSE_oritech.txt for asset licenses"
+issueTrackerURL = "https://github.com/Rearth/Oritech/issues"
+
+[[mods]]
+modId = "oritech"
+version = "1.2.13-forge1.20.1"
+displayName = "Oritech"
+authors = "Rearth (original mod); unofficial Forge 1.20.1 port by Vaartemis"
+credits = "Original mod by Rearth. Some models and textures by the Techarium team (malcolmriley), CC BY-NC 4.0."
+description = '''
+Tech mod with machines, automation and augments. Unofficial Forge 1.20.1 port of Oritech 1.2.13.
+'''
+logoFile = "assets/oritech/icon.png"
+
+
+[[dependencies.oritech]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.oritech]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.20.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.oritech]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.2,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.oritech]]
+modId = "geckolib"
+mandatory = true
+versionRange = "[4.4,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "oritech.mixins.json"

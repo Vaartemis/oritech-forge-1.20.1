@@ -1,0 +1,194 @@
+package rearth.oritech.block.blocks.storage;
+
+import rearth.oritech.port.PortComponents;
+import dev.architectury.registry.menu.ExtendedMenuProvider;
+import dev.architectury.registry.menu.MenuRegistry;
+import net.minecraft.core.BlockPos;
+import rearth.oritech.port.DataComponents;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import rearth.oritech.port.ItemInteractionResult;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
+import net.minecraft.world.phys.BlockHitResult;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import rearth.oritech.Oritech;
+import rearth.oritech.api.fluid.FluidApi;
+import rearth.oritech.block.entity.storage.SmallTankEntity;
+import rearth.oritech.init.BlockContent;
+import rearth.oritech.util.ComparatorOutputProvider;
+import rearth.oritech.util.StackContext;
+
+import java.util.List;
+
+public class SmallFluidTank extends Block implements EntityBlock {
+    public static final BooleanProperty LIT = BlockStateProperties.LIT;
+    
+    public SmallFluidTank(Properties settings) {
+        super(settings);
+        this.registerDefaultState(this.defaultBlockState().setValue(LIT, false));
+    }
+    
+    @Override
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(LIT);
+    }
+    
+    @Override
+    public RenderShape getRenderShape(BlockState state) {
+        return RenderShape.MODEL;
+    }
+    
+    @Nullable
+    @Override
+    public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+        return new SmallTankEntity(pos, state, false);
+    }
+    
+    @Override
+    public boolean hasAnalogOutputSignal(BlockState state) {
+        return true;
+    }
+    
+    @Override
+    public int getAnalogOutputSignal(BlockState state, Level world, BlockPos pos) {
+        return ((ComparatorOutputProvider) world.getBlockEntity(pos)).getComparatorOutput();
+    }
+    
+    public InteractionResult useWithoutItem(BlockState state, Level world, BlockPos pos, Player player, BlockHitResult hit) {
+        
+        if (!world.isClientSide) {
+            var handler = (ExtendedMenuProvider) world.getBlockEntity(pos);
+            MenuRegistry.openExtendedMenu((ServerPlayer) player, handler);
+            
+        }
+        
+        return InteractionResult.SUCCESS;
+    }
+    
+    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
+        
+        var blockEntity = world.getBlockEntity(pos);
+        if (blockEntity instanceof SmallTankEntity tankEntity) {
+            var usedStack = stack;
+            if (stack.getCount() > 1) {
+                usedStack = stack.copyWithCount(1);
+            }
+            var stackRef = new StackContext(usedStack, updated -> {
+                if (stack.getCount() > 1) {
+                    stack.shrink(1);
+                    if (!player.getInventory().add(updated)) {
+                        player.drop(updated, true);
+                    }
+                } else {
+                    player.setItemInHand(hand, updated);
+                }
+            });
+            
+            var candidate = FluidApi.ITEM.find(stackRef);
+            if (candidate != null) {
+                
+                if (!world.isClientSide) {
+                    if (candidate.getContent().get(0).isEmpty()) { // from tank to item
+                        var moved = FluidApi.transferFirst(tankEntity.fluidStorage, candidate, tankEntity.fluidStorage.getCapacity(), false);
+                        Oritech.LOGGER.debug("moved to item {} {}", moved, stackRef.getValue());
+                    } else {    // from item to tank
+                        var moved = FluidApi.transferFirst(candidate, tankEntity.fluidStorage, tankEntity.fluidStorage.getCapacity(), false);
+                        Oritech.LOGGER.debug("moved from item {} {}", moved, stackRef.getValue());
+                    }
+                }
+                
+                world.playLocalSound(pos, SoundEvents.AXOLOTL_SPLASH, SoundSource.PLAYERS, 0.8f, 1.4f, true);
+                
+                return ItemInteractionResult.sidedSuccess(true);
+            }
+        }
+        
+        return rearth.oritech.port.ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+    }
+    
+    @Override
+    public @NotNull List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
+        var droppedStacks = super.getDrops(state, builder);
+        
+        var blockEntity = builder.getOptionalParameter(LootContextParams.BLOCK_ENTITY);
+        if (blockEntity instanceof SmallTankEntity tankEntity) {
+            droppedStacks.addAll(tankEntity.inventory.getHeldStacks());
+            tankEntity.inventory.clearContent();
+        }
+        
+        return droppedStacks;
+    }
+    
+    @Override
+    public ItemStack getCloneItemStack(net.minecraft.world.level.BlockGetter world, BlockPos pos, BlockState state) {
+        return getStackWithData(world, pos);
+    }
+    
+    @NotNull
+    private static ItemStack getStackWithData(net.minecraft.world.level.BlockGetter world, BlockPos pos) {
+        var tankEntity = (SmallTankEntity) world.getBlockEntity(pos);
+        var stack = getBasePickStack(tankEntity.isCreative);
+        
+        if (tankEntity.fluidStorage.getAmount() > 0) {
+            var fluidStack = tankEntity.fluidStorage.getStack().copy();
+            PortComponents.set(stack, FluidApi.ITEM.getFluidComponent(), fluidStack);
+            PortComponents.set(stack, DataComponents.MAX_STACK_SIZE, 1);
+        }
+        
+        return stack;
+    }
+    
+    public static ItemStack getBasePickStack(boolean creative) {
+        return new ItemStack(creative ? BlockContent.CREATIVE_TANK_BLOCK.asItem() : BlockContent.SMALL_TANK_BLOCK.asItem());
+    }
+    
+    @Override
+    public void setPlacedBy(Level world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
+        super.setPlacedBy(world, pos, state, placer, itemStack);
+        
+        if (PortComponents.has(itemStack, FluidApi.ITEM.getFluidComponent())) {
+            var tankEntity = (SmallTankEntity) world.getBlockEntity(pos);
+            tankEntity.fluidStorage.setStack(PortComponents.get(itemStack, FluidApi.ITEM.getFluidComponent()).copy());
+            tankEntity.setChanged();
+        }
+    }
+    
+    @SuppressWarnings({"rawtypes", "unchecked"})
+    @Nullable
+    @Override
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level world, BlockState state, BlockEntityType<T> type) {
+        return (world1, pos, state1, blockEntity) -> {
+            if (blockEntity instanceof BlockEntityTicker ticker)
+                ticker.tick(world1, pos, state1, blockEntity);
+        };
+    }
+    
+
+    @Override
+    public net.minecraft.world.InteractionResult use(net.minecraft.world.level.block.state.BlockState state, net.minecraft.world.level.Level level, net.minecraft.core.BlockPos pos, net.minecraft.world.entity.player.Player player, net.minecraft.world.InteractionHand hand, net.minecraft.world.phys.BlockHitResult hit) {
+        var portItemResult = useItemOn(player.getItemInHand(hand), state, level, pos, player, hand, hit);
+        if (portItemResult != rearth.oritech.port.ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION) return portItemResult.result();
+        if (hand != net.minecraft.world.InteractionHand.MAIN_HAND) return net.minecraft.world.InteractionResult.PASS;
+        return useWithoutItem(state, level, pos, player, hit);
+    }
+}

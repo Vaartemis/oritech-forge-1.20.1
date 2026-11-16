@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/steel"
+    },
+    {
+      "tag": "forge:ingots/steel"
+    },
+    {
+      "tag": "forge:ingots/copper"
+    },
+    {
+      "tag": "forge:plates/plastic"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "id": "oritech:machine_plating_block"
+    }
+  ],
+  "time": 96
+}

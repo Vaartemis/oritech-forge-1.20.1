@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "evilcraft"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "item": "evilcraft:dark_gem"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "evilcraft:dark_gem_crushed"
+    }
+  ],
+  "time": 100
+}

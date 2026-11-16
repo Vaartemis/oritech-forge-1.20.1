@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/iron"
+    },
+    {
+      "tag": "forge:ender_pearls"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "enderio:pulsating_alloy_ingot"
+    }
+  ],
+  "time": 150
+}

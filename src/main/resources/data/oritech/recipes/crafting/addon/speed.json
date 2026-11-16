@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "tag": "oritech:plating"
+    },
+    "c": {
+      "tag": "forge:ingots/steel"
+    },
+    "f": {
+      "tag": "forge:plates/plastic"
+    },
+    "s": {
+      "item": "oritech:magnetic_coil"
+    }
+  },
+  "pattern": [
+    "fff",
+    "fcf",
+    "sbs"
+  ],
+  "result": {
+    "count": 1,
+    "item": "oritech:machine_speed_addon"
+  }
+}

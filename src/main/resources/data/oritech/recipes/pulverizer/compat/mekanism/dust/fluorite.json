@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "forge:gems/fluorite"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "mekanism:dust_fluorite"
+    }
+  ],
+  "time": 100
+}

@@ -1,0 +1,10 @@
+{
+  "type": "oritech:bio_generator",
+  "ingredients": [
+    {
+      "tag": "forge:fuels/bio"
+    }
+  ],
+  "results": [],
+  "time": 500
+}

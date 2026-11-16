@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "tag": "forge:ingots/steel"
+    },
+    "i": {
+      "tag": "forge:ingots/nickel"
+    }
+  },
+  "pattern": [
+    "iii",
+    "ccc",
+    "iii"
+  ],
+  "result": {
+    "count": 4,
+    "item": "oritech:magnetic_coil"
+  }
+}

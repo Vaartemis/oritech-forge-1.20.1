@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "irons_spellbooks"
+    }
+  ],
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "forge:raw_materials/mithril"
+    },
+    {
+      "tag": "forge:raw_materials/mithril"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "irons_spellbooks:mithril_scrap"
+    }
+  ],
+  "time": 80
+}

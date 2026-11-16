@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "tag": "oritech:plating"
+    },
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "f": {
+      "item": "oritech:dubios_container"
+    },
+    "m": {
+      "item": "oritech:motor"
+    },
+    "s": {
+      "tag": "forge:carbon_fibre"
+    }
+  },
+  "pattern": [
+    "fsf",
+    "mcm",
+    "bbb"
+  ],
+  "result": {
+    "count": 1,
+    "item": "oritech:augment_application_block"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "oritech:atomic_forge",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/diamond"
+    },
+    {
+      "tag": "forge:circuits/advanced"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "mekanism:elite_control_circuit"
+    }
+  ],
+  "time": 5
+}

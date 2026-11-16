@@ -1,0 +1,27 @@
+{
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:clumps/uranium"
+      }
+    }
+  ],
+  "type": "oritech:centrifuge_fluid",
+  "fluidInput": {
+    "fluid": "minecraft:water"
+  },
+  "ingredients": [
+    {
+      "tag": "forge:clumps/uranium"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "oritech:uranium_dust"
+    }
+  ],
+  "time": 50
+}

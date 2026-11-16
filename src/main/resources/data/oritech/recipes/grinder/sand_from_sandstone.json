@@ -1,0 +1,15 @@
+{
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "forge:sandstone/blocks"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "minecraft:sand"
+    }
+  ],
+  "time": 120
+}

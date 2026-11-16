@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "tag": "oritech:plating"
+    },
+    "c": {
+      "item": "oritech:enderic_lens"
+    },
+    "f": {
+      "tag": "forge:plates/plastic"
+    },
+    "s": {
+      "tag": "forge:ingots/electrum"
+    }
+  },
+  "pattern": [
+    "fff",
+    "fcf",
+    "sbs"
+  ],
+  "result": {
+    "count": 1,
+    "item": "oritech:machine_yield_addon"
+  }
+}

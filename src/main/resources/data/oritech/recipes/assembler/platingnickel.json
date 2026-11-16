@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/steel"
+    },
+    {
+      "tag": "forge:ingots/steel"
+    },
+    {
+      "tag": "forge:ingots/nickel"
+    },
+    {
+      "tag": "forge:plates/plastic"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "id": "oritech:nickel_plating_block"
+    }
+  ],
+  "time": 96
+}

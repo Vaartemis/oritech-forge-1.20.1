@@ -1,0 +1,25 @@
+{
+  "type": "create:splashing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "forge:clumps/nickel"
+    }
+  ],
+  "results": [
+    {
+      "item": "oritech:nickel_nugget",
+      "count": 9
+    },
+    {
+      "item": "oritech:small_platinum_dust",
+      "count": 2,
+      "chance": 0.5
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "tag": "forge:ingots/nickel"
+    },
+    "i": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "iii",
+    "ccc",
+    "iii"
+  ],
+  "result": {
+    "count": 6,
+    "item": "oritech:item_pipe"
+  }
+}

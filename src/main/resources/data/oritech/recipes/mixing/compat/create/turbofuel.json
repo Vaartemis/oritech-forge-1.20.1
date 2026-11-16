@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "oritech:fluxite"
+    },
+    {
+      "fluid": "oritech:still_oil",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "fluid": "oritech:still_fuel",
+      "amount": 1000
+    }
+  ]
+}

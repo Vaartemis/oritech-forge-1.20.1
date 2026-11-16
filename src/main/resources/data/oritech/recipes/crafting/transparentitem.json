@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "tag": "forge:ingots/nickel"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "tag": "forge:glass"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "scs",
+    "ppp"
+  ],
+  "result": {
+    "count": 6,
+    "item": "oritech:transparent_item_pipe"
+  }
+}

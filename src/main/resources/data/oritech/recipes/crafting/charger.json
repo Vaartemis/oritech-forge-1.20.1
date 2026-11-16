@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "tag": "forge:chests/wooden"
+    },
+    "c": {
+      "tag": "forge:storage_blocks/redstone"
+    },
+    "f": {
+      "tag": "forge:ingots/steel"
+    },
+    "m": {
+      "item": "oritech:energy_pipe"
+    },
+    "s": {
+      "item": "minecraft:dispenser"
+    }
+  },
+  "pattern": [
+    "fsf",
+    "mcm",
+    "bbb"
+  ],
+  "result": {
+    "count": 1,
+    "item": "oritech:charger_block"
+  }
+}

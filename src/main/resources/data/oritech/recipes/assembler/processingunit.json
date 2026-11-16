@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "ingredients": [
+    {
+      "tag": "forge:plates/plastic"
+    },
+    {
+      "tag": "forge:carbon_fibre"
+    },
+    {
+      "tag": "forge:ingots/electrum"
+    },
+    {
+      "tag": "forge:dusts/redstone"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "oritech:processing_unit"
+    }
+  ],
+  "time": 96
+}

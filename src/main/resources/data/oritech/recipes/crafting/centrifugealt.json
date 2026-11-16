@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "oritech:motor"
+    },
+    "c": {
+      "item": "oritech:motor"
+    },
+    "f": {
+      "item": "minecraft:glass_bottle"
+    },
+    "m": {
+      "tag": "forge:ingots/copper"
+    },
+    "s": {
+      "tag": "forge:storage_blocks/iron"
+    }
+  },
+  "pattern": [
+    "fff",
+    "mcm",
+    "sbs"
+  ],
+  "result": {
+    "count": 1,
+    "item": "oritech:centrifuge_block"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "oritech:gold_gem"
+    },
+    {
+      "item": "oritech:gold_gem"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:gold_ingot",
+      "count": 3
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "package": "rearth.oritech.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8.5",
+  "mixins": [
+    "EntityLaserDropsMixin",
+    "EntityLaserDropsMixin$LivingEntityMixin",
+    "MachineControllerLifecycleMixin"
+  ],
+  "client": [
+    "client.CapeLayerMixin",
+    "client.HumanoidModelMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "jaopca"
+      }
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "forge:ores/silver"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "immersiveengineering:raw_silver"
+    },
+    {
+      "count": 1,
+      "id": "oritech:copper_dust"
+    }
+  ],
+  "time": 40
+}

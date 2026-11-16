@@ -1,0 +1,21 @@
+{
+  "type": "oritech:atomic_forge",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/copper"
+    },
+    {
+      "tag": "forge:dusts/uranium"
+    },
+    {
+      "tag": "forge:dusts/uranium"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "oritech:uranium_gem"
+    }
+  ],
+  "time": 5
+}

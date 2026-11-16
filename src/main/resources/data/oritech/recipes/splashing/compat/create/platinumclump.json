@@ -1,0 +1,24 @@
+{
+  "type": "create:splashing",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "forge:clumps/platinum"
+    }
+  ],
+  "results": [
+    {
+      "item": "oritech:platinum_nugget",
+      "count": 9
+    },
+    {
+      "item": "oritech:fluxite",
+      "chance": 0.25
+    }
+  ]
+}

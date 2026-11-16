@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "evilcraft"
+    }
+  ],
+  "type": "oritech:centrifuge_fluid",
+  "fluidInput": {
+    "amount": 10,
+    "fluid": "evilcraft:blood"
+  },
+  "ingredients": [
+    {
+      "tag": "forge:sands/colorless"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "minecraft:red_sand"
+    }
+  ],
+  "time": 100
+}

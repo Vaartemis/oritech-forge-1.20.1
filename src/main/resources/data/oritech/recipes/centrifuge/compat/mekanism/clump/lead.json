@@ -1,0 +1,32 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "jaopca"
+      }
+    }
+  ],
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "forge:clumps/lead"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "mekanism:dust_lead"
+    },
+    {
+      "count": 3,
+      "id": "mekanism:nugget_tin"
+    }
+  ],
+  "time": 100
+}

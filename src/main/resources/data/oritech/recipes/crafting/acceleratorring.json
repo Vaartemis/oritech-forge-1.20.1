@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "tag": "forge:ingots/steel"
+    },
+    "e": {
+      "item": "minecraft:redstone_torch"
+    },
+    "m": {
+      "item": "oritech:superconductor"
+    },
+    "s": {
+      "item": "oritech:industrial_glass_block"
+    }
+  },
+  "pattern": [
+    " a ",
+    "aea",
+    "mss"
+  ],
+  "result": {
+    "count": 1,
+    "item": "oritech:accelerator_ring"
+  }
+}

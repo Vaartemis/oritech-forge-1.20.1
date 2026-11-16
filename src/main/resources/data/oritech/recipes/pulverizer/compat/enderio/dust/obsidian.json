@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "forge:obsidian"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "enderio:powdered_obsidian"
+    }
+  ],
+  "time": 140
+}

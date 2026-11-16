@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "forge:gems/lapis"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "mekanism:dust_lapis_lazuli"
+    }
+  ],
+  "time": 100
+}

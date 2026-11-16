@@ -1,0 +1,35 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "jaopca"
+      }
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "forge:raw_materials/osmium"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "mekanism:clump_osmium"
+    },
+    {
+      "count": 3,
+      "id": "mekanism:nugget_osmium"
+    },
+    {
+      "count": 2,
+      "id": "oritech:small_platinum_clump"
+    }
+  ]
+}

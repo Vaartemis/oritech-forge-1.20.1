@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "ae2"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "forge:gems/fluix"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "ae2:fluix_dust"
+    }
+  ],
+  "time": 100
+}

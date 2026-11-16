@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "tag": "forge:plates/plastic"
+    },
+    "i": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "pattern": [
+    "iii",
+    "ccc",
+    "iii"
+  ],
+  "result": {
+    "count": 2,
+    "item": "oritech:spawner_cage_block"
+  }
+}

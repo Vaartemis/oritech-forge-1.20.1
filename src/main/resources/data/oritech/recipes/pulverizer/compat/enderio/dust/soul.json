@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "item": "enderio:soularium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "enderio:soul_powder"
+    }
+  ],
+  "time": 120
+}

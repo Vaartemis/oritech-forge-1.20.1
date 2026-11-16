@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "evilcraft"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "evilcraft:dark_ores"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "evilcraft:dark_gem"
+    },
+    {
+      "count": 1,
+      "id": "evilcraft:dark_gem_crushed"
+    }
+  ],
+  "time": 120
+}

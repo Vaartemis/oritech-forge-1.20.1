@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/uranium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "oritech:small_uranium_dust"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "tag": "forge:dusts/redstone"
+    },
+    "s": {
+      "tag": "forge:carbon_fibre"
+    }
+  },
+  "pattern": [
+    "sss",
+    "scs",
+    "sss"
+  ],
+  "result": {
+    "count": 1,
+    "item": "oritech:machine_core_3"
+  }
+}

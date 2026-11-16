@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "forge:gems/lapis"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "enderio:powdered_lapis_lazuli"
+    }
+  ],
+  "time": 120
+}

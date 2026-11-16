@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "oritech:atomic_forge",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/refined_obsidian"
+    },
+    {
+      "tag": "forge:circuits/elite"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "mekanism:ultimate_control_circuit"
+    }
+  ],
+  "time": 5
+}

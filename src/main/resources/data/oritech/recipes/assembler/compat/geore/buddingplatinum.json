@@ -1,0 +1,30 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "geore"
+    }
+  ],
+  "type": "oritech:assembler",
+  "ingredients": [
+    {
+      "item": "geore:platinum_shard"
+    },
+    {
+      "item": "geore:platinum_shard"
+    },
+    {
+      "item": "oritech:enderic_compound"
+    },
+    {
+      "item": "oritech:overcharged_crystal"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "geore:budding_platinum"
+    }
+  ],
+  "time": 120
+}

@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "irons_spellbooks"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "forge:ores/mithril"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "irons_spellbooks:raw_mithril"
+    }
+  ],
+  "time": 120
+}

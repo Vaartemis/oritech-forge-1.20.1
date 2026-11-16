@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/steel"
+    },
+    {
+      "tag": "forge:obsidians/normal"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "enderio:dark_steel_ingot"
+    }
+  ],
+  "time": 120
+}

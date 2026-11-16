@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "tag": "forge:glass"
+    },
+    "p": {
+      "tag": "forge:ingots/copper"
+    },
+    "s": {
+      "item": "oritech:fluid_pipe"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "scs",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "item": "oritech:small_tank_block"
+  }
+}

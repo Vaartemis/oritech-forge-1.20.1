@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enderio_endergy"
+    }
+  ],
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "item": "enderio:pulsating_powder"
+    },
+    {
+      "tag": "forge:ingots/gold"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "enderio_endergy:crystalline_alloy_ingot"
+    }
+  ],
+  "time": 360
+}

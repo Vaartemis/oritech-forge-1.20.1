@@ -1,0 +1,18 @@
+{
+  "type": "oritech:centrifuge_fluid",
+  "fluidInput": {
+    "fluid": "#forge:naphtha"
+  },
+  "fluidOutputs": [
+    {
+      "fluid": "oritech:still_silicon_wash"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "forge:dusts/quartz"
+    }
+  ],
+  "results": [],
+  "time": 100
+}

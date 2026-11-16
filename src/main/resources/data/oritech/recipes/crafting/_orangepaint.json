@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "tag": "forge:dusts/electrum"
+    },
+    "p": {
+      "tag": "forge:plates/plastic"
+    },
+    "s": {
+      "tag": "forge:dusts/copper"
+    }
+  },
+  "pattern": [
+    " s ",
+    "pbp",
+    " s "
+  ],
+  "result": {
+    "count": 4,
+    "item": "oritech:orange_paint"
+  }
+}

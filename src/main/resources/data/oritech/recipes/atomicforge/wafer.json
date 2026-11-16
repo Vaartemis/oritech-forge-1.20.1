@@ -1,0 +1,21 @@
+{
+  "type": "oritech:atomic_forge",
+  "ingredients": [
+    {
+      "tag": "forge:carbon_fibre"
+    },
+    {
+      "tag": "forge:silicon"
+    },
+    {
+      "tag": "forge:silicon"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "oritech:silicon_wafer"
+    }
+  ],
+  "time": 5
+}

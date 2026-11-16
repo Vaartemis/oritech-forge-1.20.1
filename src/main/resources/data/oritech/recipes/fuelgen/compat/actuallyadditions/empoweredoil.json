@@ -1,0 +1,16 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "oritech:fuel_generator",
+  "fluidInput": {
+    "amount": 100,
+    "fluid": "actuallyadditions:empowered_oil"
+  },
+  "ingredients": [],
+  "results": [],
+  "time": 240
+}

@@ -1,0 +1,32 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "jaopca"
+      }
+    }
+  ],
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "forge:clumps/osmium"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "mekanism:dust_osmium"
+    },
+    {
+      "count": 2,
+      "id": "oritech:small_platinum_dust"
+    }
+  ],
+  "time": 150
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "oritech:motor"
+    },
+    "c": {
+      "item": "oritech:processing_unit"
+    },
+    "f": {
+      "tag": "forge:carbon_fibre"
+    },
+    "s": {
+      "tag": "forge:chests"
+    }
+  },
+  "pattern": [
+    "fff",
+    "fcf",
+    "sbs"
+  ],
+  "result": {
+    "count": 1,
+    "item": "oritech:machine_inventory_proxy_addon"
+  }
+}

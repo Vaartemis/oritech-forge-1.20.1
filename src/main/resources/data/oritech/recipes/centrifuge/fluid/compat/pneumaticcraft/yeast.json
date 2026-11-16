@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "pneumaticcraft"
+    }
+  ],
+  "type": "oritech:centrifuge_fluid",
+  "fluidInput": {
+    "fluid": "minecraft:water"
+  },
+  "fluidOutputs": [
+    {
+      "amount": 250,
+      "fluid": "pneumaticcraft:yeast_culture"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "forge:mushrooms"
+    }
+  ],
+  "results": [],
+  "time": 100
+}

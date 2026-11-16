@@ -1,0 +1,24 @@
+{
+  "type": "oritech:assembler",
+  "ingredients": [
+    {
+      "tag": "forge:plates/plastic"
+    },
+    {
+      "item": "oritech:fluxite"
+    },
+    {
+      "item": "oritech:fluxite"
+    },
+    {
+      "tag": "forge:ingots/steel"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "oritech:basic_battery"
+    }
+  ],
+  "time": 96
+}

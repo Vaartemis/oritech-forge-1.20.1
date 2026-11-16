@@ -1,0 +1,18 @@
+{
+  "type": "oritech:centrifuge_fluid",
+  "fluidInput": {
+    "fluid": "#forge:sulfuric_acid"
+  },
+  "ingredients": [
+    {
+      "tag": "forge:ingots/steel"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "oritech:basic_battery"
+    }
+  ],
+  "time": 100
+}

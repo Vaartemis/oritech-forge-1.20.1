@@ -1,0 +1,16 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "oritech:fuel_generator",
+  "fluidInput": {
+    "amount": 100,
+    "fluid": "immersiveengineering:high_power_biodiesel"
+  },
+  "ingredients": [],
+  "results": [],
+  "time": 240
+}

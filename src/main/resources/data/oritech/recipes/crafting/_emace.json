@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "oritech:adamant_ingot"
+    },
+    "e": {
+      "item": "minecraft:netherite_block"
+    },
+    "m": {
+      "item": "oritech:carbon_fibre_strands"
+    },
+    "s": {
+      "item": "oritech:advanced_battery"
+    }
+  },
+  "pattern": [
+    " a ",
+    "aea",
+    "mss"
+  ],
+  "result": {
+    "count": 1,
+    "item": "oritech:electric_mace"
+  }
+}

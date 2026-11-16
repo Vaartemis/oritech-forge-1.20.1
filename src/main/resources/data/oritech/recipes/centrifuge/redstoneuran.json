@@ -1,0 +1,15 @@
+{
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/redstone"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "oritech:small_uranium_dust"
+    }
+  ],
+  "time": 100
+}

@@ -1,0 +1,32 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "jaopca"
+      }
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "forge:ores/zinc"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "create:raw_zinc"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:gunpowder"
+    }
+  ],
+  "time": 40
+}

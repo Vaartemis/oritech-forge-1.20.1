@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "oritech:processing_unit"
+    },
+    "e": {
+      "tag": "forge:plates/plastic"
+    },
+    "m": {
+      "tag": "forge:ingots/electrum"
+    },
+    "s": {
+      "tag": "forge:ingots/steel"
+    }
+  },
+  "pattern": [
+    " a ",
+    "aea",
+    "mss"
+  ],
+  "result": {
+    "count": 1,
+    "item": "oritech:target_designator"
+  }
+}

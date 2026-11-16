@@ -1,0 +1,36 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "jaopca"
+      }
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "forge:raw_materials/lead"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "mekanism:clump_lead"
+    },
+    {
+      "count": 3,
+      "id": "mekanism:nugget_lead"
+    },
+    {
+      "count": 3,
+      "id": "mekanism:nugget_tin"
+    }
+  ],
+  "time": 40
+}

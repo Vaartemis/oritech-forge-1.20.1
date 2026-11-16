@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "tag": "oritech:plating"
+    },
+    "c": {
+      "tag": "forge:ingots/electrum"
+    },
+    "f": {
+      "tag": "forge:carbon_fibre"
+    },
+    "m": {
+      "item": "oritech:motor"
+    },
+    "s": {
+      "item": "oritech:enderic_lens"
+    }
+  },
+  "pattern": [
+    "fsf",
+    "mcm",
+    "bbb"
+  ],
+  "result": {
+    "count": 1,
+    "item": "oritech:laser_arm_block"
+  }
+}

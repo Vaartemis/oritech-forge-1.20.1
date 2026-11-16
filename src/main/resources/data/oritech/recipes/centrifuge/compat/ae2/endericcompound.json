@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "ae2"
+    }
+  ],
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "item": "ae2:ender_dust"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "oritech:enderic_compound"
+    }
+  ],
+  "time": 100
+}
