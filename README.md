@@ -1,7 +1,7 @@
-# Oritech for Forge 1.20.1
+# Oritech Backported (Forge 1.20.1)
 
-Unofficial Forge 1.20.1 port of [Oritech](https://github.com/Rearth/Oritech) 1.2.13 by Rearth.
-Not affiliated with or endorsed by the original authors; report port bugs here, not upstream.
+Unofficial Forge 1.20.1 backport of [Oritech](https://github.com/Rearth/Oritech) 1.2.13 by Rearth, published with his permission.
+This is **not** the official, supporter-verified Oritech. Report backport bugs here, not upstream.
 
 - Requires Forge 47.x, Architectury 9.2+, GeckoLib 4.
 - Code: CC0 (as upstream). Some models and textures are by the Techarium team and licensed CC BY-NC 4.0: no commercial use. See LICENSE.
