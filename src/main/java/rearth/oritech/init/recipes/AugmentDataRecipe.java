@@ -8,6 +8,7 @@ import rearth.oritech.block.entity.augmenter.api.Augment;
 import rearth.oritech.block.entity.augmenter.api.CustomAugmentsCollection;
 import rearth.oritech.block.entity.augmenter.api.EffectAugment;
 import rearth.oritech.block.entity.augmenter.api.ModifierAugment;
+import rearth.oritech.block.entity.augmenter.api.ScaleAugment;
 import rearth.oritech.util.SizedIngredient;
 
 import java.util.List;
@@ -157,6 +158,13 @@ public class AugmentDataRecipe implements Recipe<RecipeInput>, rearth.oritech.po
               this.toggleable,
               BuiltInRegistries.MOB_EFFECT.getHolderOrThrow(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.MOB_EFFECT, effectDefinition.potionEffectId)),
               effectDefinition.effectStrength);
+        } else if (modifierDefinition != null && modifierDefinition.entityAttributeId.equals(ScaleAugment.SCALE_ATTRIBUTE)) {
+            // 1.20.1 has no scale attribute: size augments go through Pehkui (optional)
+            return new ScaleAugment(
+              recipeId,
+              AttributeModifier.Operation.fromValue(modifierDefinition.attributeOperationType()),
+              modifierDefinition.amount(),
+              this.toggleable);
         } else if (modifierDefinition != null) {
             return new ModifierAugment(
               recipeId,

@@ -707,8 +707,8 @@ public class ReactorControllerBlockEntity extends NetworkedBlockEntity implement
         // initial layout and slider value travel with the menu opening, only to the player opening it
         // read in the same order by ReactorScreenHandler's buffer constructor
         buf.writeBlockPos(worldPosition);
-        buf.writeBlockPos(areaMin);
-        buf.writeBlockPos(areaMax);
+        buf.writeBlockPos(areaMin != null ? areaMin : worldPosition);
+        buf.writeBlockPos(areaMax != null ? areaMax : worldPosition);
         buf.writeInt(warningHeatThreshold);
     }
     

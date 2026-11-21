@@ -196,6 +196,12 @@ public class NetworkManager {
                 } else {
                     var codec = getAutoCodec(field);
                     var value = field.get(target);
+                    // nullable fields (e.g. an unset target BlockPos) carry a presence flag; a failed write used to
+                    // shift every following field on the client
+                    if (!field.getType().isPrimitive()) {
+                        byteBuf.writeBoolean(value != null);
+                        if (value == null) { encodedCount++; continue; }
+                    }
                     if (codec instanceof WorldPacketCodec worldPacketCodec) {
                         worldPacketCodec.encode(byteBuf, value, world);
                     } else {
@@ -239,6 +245,10 @@ public class NetworkManager {
                 } else {
                     var codec = getAutoCodec(field);
                     Object value;
+                    if (!field.getType().isPrimitive() && !byteBuf.readBoolean()) {
+                        field.set(target, null);
+                        continue;
+                    }
                     if (codec instanceof WorldPacketCodec worldPacketCodec) {
                         value = worldPacketCodec.decode(byteBuf, world);
                     } else {

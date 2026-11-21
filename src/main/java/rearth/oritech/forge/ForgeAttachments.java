@@ -88,7 +88,8 @@ public final class ForgeAttachments {
     @SuppressWarnings({"unchecked", "rawtypes"})
     private static <T> void sync(ServerPlayer player, Attachment<T> a, T value) {
         if (a.networkCodec() == null) return;
-        var buf = Unpooled.buffer();
+        // the augment codecs read/write a RegistryFriendlyByteBuf; a bare netty buffer threw ClassCastException
+        var buf = new rearth.oritech.port.RegistryFriendlyByteBuf(Unpooled.buffer(), player.serverLevel().registryAccess());
         ((StreamCodec) a.networkCodec()).encode(buf, value);
         var bytes = new byte[buf.readableBytes()];
         buf.readBytes(bytes);
@@ -106,7 +107,7 @@ public final class ForgeAttachments {
             var a = TYPES.get(payload.id());
             var player = ClientAccess.player();
             if (a == null || player == null) return;
-            var value = ((StreamCodec) a.networkCodec()).decode(Unpooled.wrappedBuffer(payload.data()));
+            var value = ((StreamCodec) a.networkCodec()).decode(new rearth.oritech.port.RegistryFriendlyByteBuf(Unpooled.wrappedBuffer(payload.data()), player.level().registryAccess()));
             VALUES.computeIfAbsent(player, e -> new HashMap<>()).put(a.identifier(), value);
         });
     }

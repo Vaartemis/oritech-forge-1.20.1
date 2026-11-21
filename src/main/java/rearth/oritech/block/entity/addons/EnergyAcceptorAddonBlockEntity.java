@@ -39,7 +39,7 @@ public class EnergyAcceptorAddonBlockEntity extends AddonBlockEntity implements 
         if (cachedController != null)
             return cachedController;
         
-        cachedController = (MachineAddonController) Objects.requireNonNull(level).getBlockEntity(getControllerPos());
+        cachedController = Objects.requireNonNull(level).getBlockEntity(getControllerPos()) instanceof MachineAddonController controller ? controller : null;
         return cachedController;
     }
     

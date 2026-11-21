@@ -79,7 +79,7 @@ public class InventoryProxyAddonBlockEntity extends AddonBlockEntity implements 
         if (cachedController != null)
             return cachedController;
         
-        cachedController = (MachineAddonController) Objects.requireNonNull(level).getBlockEntity(getControllerPos());
+        cachedController = Objects.requireNonNull(level).getBlockEntity(getControllerPos()) instanceof MachineAddonController controller ? controller : null;
         return cachedController;
     }
     
@@ -97,7 +97,9 @@ public class InventoryProxyAddonBlockEntity extends AddonBlockEntity implements 
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int syncId, Inventory playerInventory, Player player) {
-        return new InventoryProxyScreenHandler(syncId, playerInventory, this, getCachedController().getScreenProvider(), targetSlot);
+        var controller = getCachedController();
+        if (controller == null) return null;
+        return new InventoryProxyScreenHandler(syncId, playerInventory, this, controller.getScreenProvider(), targetSlot);
     }
     
     public void setTargetSlot(int targetSlot) {

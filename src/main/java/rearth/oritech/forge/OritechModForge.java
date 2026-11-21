@@ -73,6 +73,7 @@ public final class OritechModForge {
         FluidContent.registerItems();
 
         Oritech.initialize();
+        rearth.oritech.compat.PehkuiCompat.init();
         // the neoforge:attachment_types registry event never fires on Forge
         rearth.oritech.block.entity.augmenter.api.Augment.registerAttachmentTypes();
         rearth.oritech.util.ServerZiplineHandler.registerAttachments();
