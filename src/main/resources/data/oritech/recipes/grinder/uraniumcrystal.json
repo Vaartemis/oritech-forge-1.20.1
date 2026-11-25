@@ -8,11 +8,11 @@
   "results": [
     {
       "count": 5,
-      "id": "oritech:raw_uranium"
+      "item": "oritech:raw_uranium"
     },
     {
       "count": 1,
-      "id": "oritech:small_plutonium_dust"
+      "item": "oritech:small_plutonium_dust"
     }
   ],
   "time": 40

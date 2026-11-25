@@ -8,11 +8,11 @@
   "results": [
     {
       "count": 1,
-      "id": "oritech:copper_gem"
+      "item": "oritech:copper_gem"
     },
     {
       "count": 3,
-      "id": "oritech:small_gold_dust"
+      "item": "oritech:small_gold_dust"
     }
   ],
   "time": 100

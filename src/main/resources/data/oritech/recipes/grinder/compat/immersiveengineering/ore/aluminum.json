@@ -21,11 +21,11 @@
   "results": [
     {
       "count": 2,
-      "id": "immersiveengineering:raw_aluminum"
+      "item": "immersiveengineering:raw_aluminum"
     },
     {
       "count": 1,
-      "id": "oritech:quartz_dust"
+      "item": "oritech:quartz_dust"
     }
   ],
   "time": 40

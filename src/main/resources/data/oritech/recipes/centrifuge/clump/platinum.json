@@ -8,11 +8,11 @@
   "results": [
     {
       "count": 1,
-      "id": "oritech:platinum_gem"
+      "item": "oritech:platinum_gem"
     },
     {
       "count": 1,
-      "id": "oritech:fluxite"
+      "item": "oritech:fluxite"
     }
   ],
   "time": 150

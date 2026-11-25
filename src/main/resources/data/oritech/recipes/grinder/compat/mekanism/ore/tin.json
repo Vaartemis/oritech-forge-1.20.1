@@ -21,11 +21,11 @@
   "results": [
     {
       "count": 2,
-      "id": "mekanism:raw_tin"
+      "item": "mekanism:raw_tin"
     },
     {
       "count": 1,
-      "id": "mekanism:raw_lead"
+      "item": "mekanism:raw_lead"
     }
   ],
   "time": 40

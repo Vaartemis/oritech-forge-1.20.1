@@ -5,7 +5,7 @@ issueTrackerURL = "https://github.com/Vaartemis/oritech-forge-1.20.1/issues"
 
 [[mods]]
 modId = "oritech"
-version = "1.2.13.2-forge1.20.1"
+version = "1.2.13.3-forge1.20.1"
 displayName = "Oritech Backported"
 displayURL = "https://github.com/Vaartemis/oritech-forge-1.20.1"
 authors = "Rearth (original mod); unofficial Forge 1.20.1 port by Vaartemis"

@@ -21,11 +21,11 @@
   "results": [
     {
       "count": 1,
-      "id": "immersiveengineering:dust_lead"
+      "item": "immersiveengineering:dust_lead"
     },
     {
       "count": 3,
-      "id": "immersiveengineering:nugget_lead"
+      "item": "immersiveengineering:nugget_lead"
     }
   ],
   "time": 40

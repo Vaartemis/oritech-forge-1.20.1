@@ -21,15 +21,15 @@
   "results": [
     {
       "count": 1,
-      "id": "create:crushed_raw_zinc"
+      "item": "create:crushed_raw_zinc"
     },
     {
       "count": 3,
-      "id": "create:zinc_nugget"
+      "item": "create:zinc_nugget"
     },
     {
       "count": 1,
-      "id": "minecraft:gunpowder"
+      "item": "minecraft:gunpowder"
     }
   ],
   "time": 40

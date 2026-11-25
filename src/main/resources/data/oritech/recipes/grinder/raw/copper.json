@@ -8,15 +8,15 @@
   "results": [
     {
       "count": 1,
-      "id": "oritech:copper_clump"
+      "item": "oritech:copper_clump"
     },
     {
       "count": 3,
-      "id": "oritech:small_copper_clump"
+      "item": "oritech:small_copper_clump"
     },
     {
       "count": 3,
-      "id": "oritech:small_gold_clump"
+      "item": "oritech:small_gold_clump"
     }
   ],
   "time": 40

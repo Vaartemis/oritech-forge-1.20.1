@@ -21,11 +21,11 @@
   "results": [
     {
       "count": 2,
-      "id": "create:raw_zinc"
+      "item": "create:raw_zinc"
     },
     {
       "count": 1,
-      "id": "minecraft:gunpowder"
+      "item": "minecraft:gunpowder"
     }
   ],
   "time": 40

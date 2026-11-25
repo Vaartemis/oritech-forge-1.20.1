@@ -21,11 +21,11 @@
   "results": [
     {
       "count": 1,
-      "id": "mekanism:dust_tin"
+      "item": "mekanism:dust_tin"
     },
     {
       "count": 3,
-      "id": "mekanism:nugget_lead"
+      "item": "mekanism:nugget_lead"
     }
   ],
   "time": 100

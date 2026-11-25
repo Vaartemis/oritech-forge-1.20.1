@@ -8,11 +8,11 @@
   "results": [
     {
       "count": 1,
-      "id": "oritech:platinum_dust"
+      "item": "oritech:platinum_dust"
     },
     {
       "count": 3,
-      "id": "oritech:small_platinum_dust"
+      "item": "oritech:small_platinum_dust"
     }
   ],
   "time": 150

@@ -8,11 +8,11 @@
   "results": [
     {
       "count": 1,
-      "id": "oritech:copper_dust"
+      "item": "oritech:copper_dust"
     },
     {
       "count": 3,
-      "id": "oritech:small_copper_dust"
+      "item": "oritech:small_copper_dust"
     }
   ],
   "time": 100

@@ -21,15 +21,15 @@
   "results": [
     {
       "count": 1,
-      "id": "mekanism:clump_tin"
+      "item": "mekanism:clump_tin"
     },
     {
       "count": 3,
-      "id": "mekanism:nugget_tin"
+      "item": "mekanism:nugget_tin"
     },
     {
       "count": 3,
-      "id": "mekanism:nugget_lead"
+      "item": "mekanism:nugget_lead"
     }
   ],
   "time": 40

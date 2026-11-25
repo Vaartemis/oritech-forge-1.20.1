@@ -8,11 +8,11 @@
   "results": [
     {
       "count": 2,
-      "id": "minecraft:raw_gold"
+      "item": "minecraft:raw_gold"
     },
     {
       "count": 1,
-      "id": "minecraft:raw_copper"
+      "item": "minecraft:raw_copper"
     }
   ],
   "time": 40
